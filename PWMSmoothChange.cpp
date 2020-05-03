@@ -8,8 +8,8 @@ PWMSmoothChange::PWMSmoothChange (int MaxPWM){
 
 // SETUP
 
-void PWMSmoothChange::setup(int transTime){
-  transTime = transTime;
+void PWMSmoothChange::setup(int transitionTime){
+  transTime = transitionTime;
   pwm = pwmMax - pwmMin;
   dVMax = sqrt(pwm); // max value for brightness
   dVStep = dVMax / iBrSteps;

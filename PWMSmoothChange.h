@@ -27,7 +27,7 @@ private:
   bool lightChange (bool bDirection);
 public:
   int calcCurPVal ();
-  PWMSmoothChange (int transTime);
+  PWMSmoothChange (int transitionTime);
   void setLightValue(int ilVal);
   void stopChange ();
   void setup(int transTime);
